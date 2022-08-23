@@ -12,7 +12,7 @@
 .invoice header {
     padding: 10px 0;
     margin-bottom: 20px;
-    border-bottom: 1px solid #3989c6
+    border-bottom: 1px solid #713270
 }
 
 .invoice .company-details {
@@ -58,7 +58,7 @@
 
 .invoice main .notices {
     padding-left: 6px;
-    border-left: 6px solid #3989c6
+    border-left: 6px solid #713270
 }
 
 .invoice main .notices .notice {
@@ -87,7 +87,7 @@
 .invoice table td h3 {
     margin: 0;
     font-weight: 400;
-    color: #3989c6;
+    color: #713270;
     font-size: 1.2em
 }
 
@@ -99,7 +99,7 @@
 .invoice table .no {
     color: #fff;
     font-size: 1.6em;
-    background: #3989c6
+    background: #713270
 }
 
 .invoice table .unit {
@@ -107,7 +107,7 @@
 }
 
 .invoice table .total {
-    background: #3989c6;
+    background: #713270;
     color: #fff
 }
 

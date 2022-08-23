@@ -86,7 +86,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                               <h4 class="small font-weight-bold">Listado de Pedidos <span class="float-right"> <i class="fas fa-redo-alt fa-2x" style="margin-bottom: 10px" id="id_redo-alt"></i></span></h4>
+                                <h4 class="small font-weight-bold">Listado de Pedidos <span class="float-right"> <i class="fas fa-redo-alt fa-2x" style="margin-bottom: 10px" id="id_redo-alt"></i></span></h4>
 
                                 <table class="table table-bordered" id="dtPedidos" width="100%" cellspacing="0">
                                     <thead>

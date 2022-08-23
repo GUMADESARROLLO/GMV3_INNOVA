@@ -23,7 +23,14 @@ if($total_records >= 1) {
             $Str = '<span class="badge badge-error">&nbsp;&nbsp;&nbsp;PENDIENTE&nbsp;&nbsp;&nbsp;</span>';
         }
 
-        $StrPermisos = ($_SESSION['permisos'] != 2 && $_SESSION['permisos'] != 3) ? '<a href="manage-order.php?id='.$link['id'].'"  onclick="return confirm(\'¿Está seguro de que desea eliminar este pedido de forma permanente?\')" <i class="material-icons">delete</i> </a>':'';
+        
+        if ($_SESSION['permisos']==4) {
+           $StrPermisos = '';
+        } else {
+           $StrPermisos = ($_SESSION['permisos'] != 2 && $_SESSION['permisos'] != 3) ? '<a href="manage-order.php?id='.$link['id'].'"  onclick="return confirm(\'¿Está seguro de que desea eliminar este pedido de forma permanente?\')" <i class="material-icons">delete</i> </a>':'';
+
+        }
+        
 
         $accciones ='<a href="order-detail.php?id='.$link['id'].'">
                                                     <i class="material-icons">open_in_new</i>

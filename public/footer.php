@@ -1,9 +1,9 @@
 <!-- Footer Starts -->
 <!--footer start-->
 <footer class="admin-footer">
- <div class="container-fluid">
- 	<ul class="list-unstyled list-inline">
-	 	<li>
+    <div class="container-fluid">
+    <ul class="list-unstyled list-inline">
+        <li>
 			<span class="pmd-card-subtitle-text">IT Developer &copy; <span class="auto-update-year"></span>. Todos los Derechos Reservados.</span>
 			<h3 class="pmd-card-subtitle-text"><a href="#!" target="_blank">PLATAFORMA DE PEDIDOS - UNIMARK v3.0.1</a></h3>
         </li>
@@ -11,8 +11,8 @@
 			<a href="mailto:elcorreo@gmail.com">
 
             	<div>
-				  <span class="pmd-card-subtitle-text">para Soporte</span>
-				  <h3 class="pmd-card-subtitle-text">analista.guma@gmail.com</h3>
+                    <span class="pmd-card-subtitle-text">para Soporte</span>
+                    <h3 class="pmd-card-subtitle-text">analista.guma@gmail.com</h3>
 				</div>
             </a>
         </li>
@@ -30,6 +30,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/propeller.min.js"></script>
 <script src="assets/js/dropify.js"></script>
+<script src="assets/js/Numeral.js"></script>
 
 
 
@@ -50,6 +51,18 @@
             var table = $('#dtPedidos').DataTable();
             table.page.len(this.value).draw();
         });
+
+
+        $("#Id_Buscar_Orden_modal").on('keyup',function(){
+            var table = $('#dtFacturas').DataTable();
+            table.search(this.value).draw();
+        });
+
+        $( "#frm_lab_row_moda_pedido").change(function() {
+            var table = $('#dtFacturas').DataTable();
+            table.page.len(this.value).draw();
+        });
+
         $( "#selct_estados").change(function() {
             var table = $('#dtPedidos').DataTable();
             //var selectedValue = this.selectedOptions[0].value;

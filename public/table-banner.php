@@ -1,15 +1,6 @@
 <?php
 include 'functions.php';
 include 'sql-query.php';
-if (isset($_GET['id'])) {
-
-    Delete('tbl_product','product_id='.$_GET['id'].'');
-
-    header("location: manage-product.php");
-    exit;
-
-}
-
 ?>
 
 <!--content area start-->
@@ -29,7 +20,13 @@ if (isset($_GET['id'])) {
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+                <div class="row" >
+                    <div class="col-md-12" >
+                        <a  href="add-banner.php" class="btn btn-light text-success float-right"><i class="fas fa-save"></i> AGREGAR</a>
 
+                    </div>
+                </div>
+                <br>
 
 
                 <div class="row">
@@ -39,7 +36,7 @@ if (isset($_GET['id'])) {
                             <div class="card-body">
                                 <div class="row no-gutters align-items-center">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2" id="Id_Buscar_articulo">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2" id="Id_Buscar_banner">
                                         <button class="btn btn-primary" type="button">
                                             <i class="fas fa-search fa-sm"></i>
                                         </button>
@@ -51,28 +48,25 @@ if (isset($_GET['id'])) {
                     </div>
 
 
-
                 </div>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered" id="dtArticulos" width="100%" cellspacing="0">
+                            <table class="table table-bordered" id="dtBanner" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>SKU</th>
-                                    <th>Product Name</th>
+                                    <th>Activo</th>
                                     <th>Image</th>
-                                    <th>Status</th>
+                                    <th>Descripcion</th>
                                     <th width="10%">Action</th>
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th>SKU</th>
-                                    <th>Product Name</th>
+                                    <th>Activo</th>
                                     <th>Image</th>
-                                    <th>Status</th>
+                                    <th>Descripcion</th>
                                     <th width="10%">Action</th>
                                 </tr>
                                 </tfoot>

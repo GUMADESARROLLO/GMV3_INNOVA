@@ -1,0 +1,40 @@
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?get_comentarios_im=CL008411
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?post_usuario=[V01@123456]
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?articulos_sin_facturar=CL011911
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?get_recent
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?get_perfil_user=CL008411
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?clients_id=V01
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?get_detalle_factura=4345
+content-type: application/json
+
+###
+GET http://192.168.1.139:8448/gmv3_innova/api/api.php?last_3m=CL008411
+content-type: application/json
+
+###
+GET http://192.168.1.15:8448/gmv3_innova/api/api.php?post_rpt_ruta=V13&desde=01/01/2021&hasta=22/04/2021
+content-type: application/json
+
+###
+GET https://api.twitch.tv/raika_exe/subscriptions/events
+content-type: application/json

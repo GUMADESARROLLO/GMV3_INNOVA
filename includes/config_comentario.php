@@ -1,7 +1,7 @@
 <?php
 
     //database configuration
-    $host       = "192.168.1.11";
+    $host       = "192.168.1.55";
     $user       = "Dios";
     $pass       = "a7m1425.";
     $database   = "gumanet";

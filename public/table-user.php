@@ -156,6 +156,8 @@
 			<div class="pmd-card pmd-z-depth">
 				<div class="pmd-card-body">
 
+					
+
 					<div class="group-fields clearfix row">
 						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 							<div class="lead">Administrar Usuarios</div>
@@ -267,9 +269,11 @@
 											echo 'Supp SAC';
 										}else if ($data['permisos'] == 3){
 											echo 'SAC';
-										}else{
+                                        }else if ($data['permisos'] == 4){
 											echo 'Digitador';
-										}
+										}else{
+                                            echo 'Mercadeo';
+                                        }
 									?>
 									</td>
 									<td>

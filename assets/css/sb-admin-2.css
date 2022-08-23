@@ -11,7 +11,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #4e73df;
+  --inn-orange: #F39200;
+  --inn-purple: #713270;
+  --blue: #a2a5ad;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -9087,6 +9089,10 @@ a:focus {
 }
 
 
+.navbar-inn-color {
+    background-color: var(--inn-purple);
+    border-color: var(--inn-purple);
+}
 .topbar .topbar-divider {
   width: 0;
   border-right: 1px solid #e3e6f0;

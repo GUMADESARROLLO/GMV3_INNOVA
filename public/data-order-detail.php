@@ -349,7 +349,7 @@ EOF;
                 <div class="row">
                     <div class="col">
                         
-                            <img src="assets/images/logo-umk.png" width="500px" height="100px"/>
+                            <img src="assets/images/logo-innova.png" width="200px" height="100px"/>
                             
                     </div>
                     <div class="col company-details">
@@ -388,11 +388,6 @@ EOF;
 
                                 for ($l=0; $l < $cLineas ; $l++){
                                     $Lineas_detalles     = explode(";", $Lineas[$l]);
-                                   
-
-
-
-
 
                                     echo '<tr>
                                             <td class="unit">'.$Lineas_detalles[1].'</td>
@@ -403,7 +398,7 @@ EOF;
                                         </tr>';
                                     }
                             ?>
-                       
+                    
                     </tbody>
                     <?php $Orden_Resumen     = explode(";", str_replace(array("[Orden :","Impuesto :","Total :","]"), "", $Lineas[$cLineas])); ?>
 

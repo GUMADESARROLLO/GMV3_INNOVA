@@ -77,10 +77,10 @@ EOF;
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Propeller Admin Dashboard">
 <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
-    <title>PLATAFORMA DE PEDIDOS - UNIMARK</title>
+    <title>PLATAFORMA DE PEDIDOS - INNOVA INDUSTRIA S.A</title>
 <meta name="description" content="Admin is a material design and bootstrap based responsive dashboard template created mainly for admin and backend applications."/>
 
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/recy.png">
 
 <!-- Google icon -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -88,6 +88,7 @@ EOF;
 <!-- Bootstrap css -->
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/dropify.css">
+
 
 <!-- Propeller css -->
 <!-- build:[href] assets/css/ -->
@@ -117,12 +118,13 @@ EOF;
 
 
 
+
 </head>
 
 <body>
 <!-- Header Starts -->
 <!--Start Nav bar -->
-<nav class="navbar navbar-inverse navbar-fixed-top pmd-navbar pmd-z-depth" >
+<nav class="navbar navbar-inn-color navbar-fixed-top pmd-navbar pmd-z-depth" >
 
 	<div class="container-fluid">
 		<div class="pmd-navbar-right-icon pull-right navigation">
@@ -172,12 +174,6 @@ EOF;
 							</a>
 						</li>
 
-
-
-
-
-
-
 					<?php } ?>
 						<li class="list-group-item unread">
 							<a href="manage-order.php">
@@ -199,9 +195,9 @@ EOF;
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<a href="javascript:void(0);" data-target="basicSidebar" data-placement="left" data-position="slidepush" is-open="true" is-open-width="1200" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pull-left margin-r8 pmd-sidebar-toggle"><i class="material-icons md-light">menu</i></a>	
-		  <a href="dashboard.php" class="navbar-brand">
-              PLATAFORMA DE PEDIDOS
-		  </a>
+			<a href="dashboard.php" class="navbar-brand" style="color: #FFF;">
+				PLATAFORMA DE PEDIDOS
+			</a>
 		</div>
 	</div>
 
@@ -212,7 +208,7 @@ EOF;
 <div class="pmd-sidebar-overlay"></div>
 
 <!-- Left sidebar -->
-<aside id="basicSidebar" class="pmd-sidebar sidebar-default pmd-sidebar-slide-push pmd-sidebar-left pmd-sidebar-open bg-fill-darkblue sidebar-with-icons" role="navigation">
+<aside id="basicSidebar" class="pmd-sidebar sidebar-default pmd-sidebar-slide-push pmd-sidebar-left pmd-sidebar-open navbar-inn-color sidebar-with-icons" role="navigation">
 	<ul class="nav pmd-sidebar-nav">
 		
 		<!-- User info -->
@@ -236,7 +232,7 @@ EOF;
 			case '1': 
 			?>
 				<li> 
-					<a class="pmd-ripple-effect" href="dashboard.php">	
+					<a class="pmd-ripple-effect" href="dashboard.php" style="display:none">	
 						<i class="media-left media-middle material-icons">dashboard</i>
 						<span class="media-body">Dashboard</span>
 					</a> 
@@ -247,6 +243,20 @@ EOF;
 						<span class="media-body">Pedidos</span>
 					</a>
 				</l>
+
+                <li>
+                    <a class="pmd-ripple-effect" href="manage-banner.php" style="display:none">
+                        <i class="media-left media-middle material-icons">content_paste</i>
+                        <span class="media-body">Banners</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="pmd-ripple-effect" href="manage-promos.php" style="display:none">
+                        <i class="media-left media-middle material-icons">content_paste</i>
+                        <span class="media-body">Promociones</span>
+                    </a>
+                </li>
+
 
 				<li class="dropdown pmd-dropdown" style="display: none">
 					<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
@@ -261,7 +271,7 @@ EOF;
 					</ul>
 				</li>
 
-				<li class="dropdown pmd-dropdown" >
+				<li class="dropdown pmd-dropdown" style="display:none">
 					<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
 						<i class="material-icons media-left pmd-sm">local_mall</i> 
 						<span class="media-body">Productos</span>
@@ -275,13 +285,13 @@ EOF;
 					</ul>
 				</li>
 
-				<li class="dropdown pmd-dropdown" style="display: none">
+				<li class="dropdown pmd-dropdown" style="display:none">
 					<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
 						<i class="material-icons media-left pmd-sm">notifications</i>
 						<span class="media-body">Notificaciónes</span>
 						<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
 					</a> 
-					<ul class="dropdown-menu" >
+					<ul class="dropdown-menu" style="display:none">
 						<li><a href="add-notification.php">Nueva</a></li>
 						<li><a href="manage-notification.php">Lista de Notificaciónes </a></li>
 						<li style="display:none;"><a href="edit-notification.php"></a></li>
@@ -295,7 +305,7 @@ EOF;
 						<span class="media-body">Ayuda</span>
 						<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
 					</a> 
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu" style="display:none">
 						<li><a href="add-help.php">Agregar Nuevo</a></li>
 						<li><a href="manage-help.php">Lista de ayuda</a></li>
 						<li style="display:none;"><a href="edit-help.php"></a></li>
@@ -303,12 +313,12 @@ EOF;
 				</li>		
 
 				<li> 
-					<a class="pmd-ripple-effect" href="settings.php" >
+					<a class="pmd-ripple-effect" href="settings.php" style="display:none">
 						<i class="media-left media-middle material-icons">settings</i>
 						<span class="media-body">Configuración</span>
 					</a> 
 				</li>
-				<li class="dropdown pmd-dropdown" >
+				<li class="dropdown pmd-dropdown" style="display:none">
 					<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
 						<i class="material-icons media-left pmd-sm">people</i>
 						<span class="media-body">Usuarios</span>
@@ -364,25 +374,28 @@ EOF;
 					<span class="media-body">Pedidos</span>
 				</a>
 			</li>
+
+				<?php if ($data['username']=='SAC01') { ?>
+					<li> 
+						<a class="pmd-ripple-effect" href="manage-user.php?keyword=SAC">	
+							<i class="media-left media-middle material-icons">people</i>
+							<span class="media-body">Usuario</span>
+						</a>
+					</li>
+				<?php } ?>
 				
 			<?php
 				
 				break;
 			case '4': 
 			?>
-			<li class="dropdown pmd-dropdown" >
-					<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
-						<i class="material-icons media-left pmd-sm">local_mall</i> 
-						<span class="media-body">Productos</span>
-						<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
-					</a> 
-					<ul class="dropdown-menu">
-						<li><a href="add-product.php">Agregar Nuevo</a></li>
-						<li><a href="manage-product.php">Lista de productos</a></li>
-						<li style="display:none;"><a href="edit-product.php"></a></li>
-						<li style="display:none;"><a href="send-onesignal-product-notification.php"></a></li>
-					</ul>
-				</li>
+			<li> 
+					<a class="pmd-ripple-effect" href="manage-order.php">	
+						<i class="media-left media-middle material-icons">content_paste</i>
+						<span class="media-body">Pedidos</span>
+					</a>
+				</l>
+
 
 				<li class="dropdown pmd-dropdown" style="display: none">
 					<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
@@ -397,11 +410,26 @@ EOF;
 						<li style="display:none;"><a href="send-onesignal-notification.php"></a></li>
 					</ul>
 				</li>
-				
+                <?php
+
+                break;
+            case '5':
+                ?>
+                <li>
+                    <a class="pmd-ripple-effect" href="manage-banner.php">
+                        <i class="media-left media-middle material-icons">content_paste</i>
+                        <span class="media-body">Banners</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="pmd-ripple-effect" href="manage-promos.php">
+                        <i class="media-left media-middle material-icons">content_paste</i>
+                        <span class="media-body">Promociones</span>
+                    </a>
+                </li>
 			<?php
 				
 				break;
-				
 			default:
 				# code...
 				break;

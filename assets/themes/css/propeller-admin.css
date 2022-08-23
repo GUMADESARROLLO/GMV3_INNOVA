@@ -374,7 +374,7 @@ h2.typo-fill-secondary{ color:rgba(77, 87, 93, 0.68); font-size:22px;}
 .mobile-only { display:none !important;}
 
 /*=================Login css====================*/
-.body-custom{background-color: var(--main-color); height:100%;}
+.body-custom{background-color: var(--inn-purple); height:100%;}
 .logincard{margin:auto; position:relative; top:50%; max-width:640px; transform: translate(0px, -50%);}
 .logincard .checkbox{ margin-left:0px;}
 .logincard .checkbox label{padding:0;}

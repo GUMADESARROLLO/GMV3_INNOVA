@@ -35,7 +35,7 @@
 
         // if username and password is not empty, check in database
         if(!empty($username) && !empty($password)) {
-          
+        
         
             // change username to lowercase
             $username = strtolower($username);
@@ -48,9 +48,11 @@
             // get data from user table
             $sql_query = "SELECT Activo,username,password,permisos,GRUPO FROM view_tbl_usuario WHERE Activo = 'S' AND username = ? AND password = ? ";
 
+            
 
 
-          
+
+        
             $stmt = $connect->stmt_init();
             if($stmt->prepare($sql_query)) {
                 // Bind your variables to replace the ?s
@@ -67,7 +69,7 @@
                // $stmt->close();
                 if($num == 1) {
                     
-                   /* if (strlen($purchase_code) >= 36) {
+                /* if (strlen($purchase_code) >= 36) {
                         $_SESSION['user'] = $username;
                         $_SESSION['timeout'] = $currentTime + $expired;
                         header("location: dashboard.php");
@@ -76,12 +78,23 @@
                         $_SESSION['timeout'] = $currentTime + $expired;
                         header("location: verify-purchase-code.php");
                     }*/
-                   
                     $_SESSION['user'] = $username;
                     $_SESSION['grupos'] = $rGrupo;
                     $_SESSION['permisos'] = $rPermisos;
                     $_SESSION['timeout'] = $currentTime + $expired;
-                    header("location: manage-order.php");
+
+
+                    switch ($rPermisos) {
+                        case 5:
+                            header("location: manage-banner.php");
+                            break;
+                        default:
+                            header("location: manage-order.php");
+                            break;
+                    }
+
+
+
 
                 } else {
                     $error['failed'] = "<center><div class='alert alert-warning'>Usuario o contraseña invalido!</div></center>";
@@ -98,7 +111,7 @@
             <form method="POST">  
                 <div class="pmd-card-title card-header-border text-center">
                     <div class="loginlogo">
-                        <img src="assets/images/ic-logo.png" alt="Logo" style="width: 98px; height: 88px;">
+                        <img src="assets/images/logo-innova.png" alt="Logo">
                     </div>
                     <div class="lead">GESTOR DE PEDIDO</div>
                 </div>
@@ -127,8 +140,8 @@
                     <button type="submit" name="btnLogin" class="btn pmd-ripple-effect btn-danger btn-block">Acceder</button>
                     <br>
                     <br>
-                    <span class="pmd-card-subtitle-text">UNIMARK S,A &copy; <span class="auto-update-year"></span>. Todos los Derechos Reservados.</span>
-            <h3 class="pmd-card-subtitle-text">Version 3.0.1</h3>
+                    <span class="pmd-card-subtitle-text">INNOVA INDUSTRIA S,A &copy; <span class="auto-update-year"></span>. Todos los Derechos Reservados.</span>
+            <h3 class="pmd-card-subtitle-text">Version 1.0.0</h3>
                     
                 </div>
                 
