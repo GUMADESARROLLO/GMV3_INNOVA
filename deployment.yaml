@@ -23,7 +23,7 @@ spec:
         - name: regcred
       containers:
         - name: cn-gmv-inn-app
-          image: gumadesarrollo/gmvInnova:v1.0.{{BUILD_NUMBER}}
+          image: gumadesarrollo/gmvinnova:v1.0.{{BUILD_NUMBER}}
           imagePullPolicy: Always
           volumeMounts:
             - name: storage
