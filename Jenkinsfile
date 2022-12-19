@@ -13,7 +13,7 @@ pipeline {
         stage('Docker Push') {
             steps {
                 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-                sh "docker push gumadesarrollo/sac:${APP_VERSION}.${env.BUILD_NUMBER}"
+                sh "docker push gumadesarrollo/gmvinnova:${APP_VERSION}.${env.BUILD_NUMBER}"
             }
         }
         stage('Docker Remove Image') {
