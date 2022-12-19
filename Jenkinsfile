@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Docker Build') {
             steps {
-                sh "docker build -t gumadesarrollo/gmvInnova:${APP_VERSION}.${env.BUILD_NUMBER} ."
+                sh "docker build -t gumadesarrollo/gmvinnova:${APP_VERSION}.${env.BUILD_NUMBER} ."
             }
         }
         stage('Docker Push') {
