@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Docker Remove Image') {
             steps {
-                sh "docker rmi gumadesarrollo/sac:${APP_VERSION}.${env.BUILD_NUMBER}"
+                sh "docker rmi gumadesarrollo/gmvinnova:${APP_VERSION}.${env.BUILD_NUMBER}"
             }
         }
         stage('Apply Kubernetes'){
