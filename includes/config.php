@@ -1,6 +1,5 @@
 <?php
 
-    //database configuration
     $host       = "mysql-svc";
     $user       = "root";
     $pass       = "a7m1425.";
