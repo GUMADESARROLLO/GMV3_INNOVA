@@ -28,7 +28,7 @@ if (isset($_GET['category_id'])) {
         }
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 
 } else if (isset($_GET['get_recent'])) {
@@ -132,7 +132,7 @@ if (isset($_GET['category_id'])) {
         $i++;
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($json));
     $sqlsrv->close();
 
@@ -148,7 +148,7 @@ if (isset($_GET['category_id'])) {
         }
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 
 } else if (isset($_GET['get_tax_currency'])) {
@@ -163,7 +163,7 @@ if (isset($_GET['category_id'])) {
         }
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 
 } else if (isset($_GET['post_order'])) {
@@ -204,7 +204,7 @@ if (isset($_GET['category_id'])) {
         }
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 
 } else if (isset($_GET['get_help'])) {
@@ -220,7 +220,7 @@ if (isset($_GET['category_id'])) {
         }
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 
 } else if (isset($_GET['product_id'])) {
@@ -263,7 +263,7 @@ if (isset($_GET['category_id'])) {
         $i++;
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($json));
     $sqlsrv->close();
 
@@ -319,7 +319,7 @@ if (isset($_GET['category_id'])) {
 
 
 
-    //header('Content-Type: application/json; charset=utf-8');
+    //@header('Content-Type: application/json; charset=utf-8');
    // echo $val = str_replace('\\/', '/', json_encode($dta));
 
 
@@ -375,7 +375,7 @@ if (isset($_GET['category_id'])) {
         }
     }
     $stmt->close();
-    header( 'Content-Type: application/json; charset=utf-8' );
+    @header( 'Content-Type: application/json; charset=utf-8' );
     $json = json_encode($set);
     echo $json;
 
@@ -396,7 +396,7 @@ if (isset($_GET['category_id'])) {
 
     $sqlsrv->close();
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 }else if (isset($_GET['get_detalle_factura'])){
     $sqlsrv = new Sqlsrv();
@@ -438,7 +438,7 @@ if (isset($_GET['category_id'])) {
 
     $sqlsrv->close();
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 }else if (isset($_GET['last_3m'])){
     $sqlsrv = new Sqlsrv();
@@ -468,7 +468,7 @@ if (isset($_GET['category_id'])) {
         $dta[$i]['FECHA']           = $key['Dia'];
         $i++;
     }
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 }else if (isset($_GET['get_nc'])){
     $sqlsrv = new Sqlsrv();
@@ -484,7 +484,7 @@ if (isset($_GET['category_id'])) {
         $dta[$i]['VENDEDOR']           = $key['VENDEDOR'];
         $i++;
     }
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 }else if (isset($_GET['get_stat_ruta'])){
 
@@ -528,7 +528,7 @@ if (isset($_GET['category_id'])) {
 
 
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 
 
@@ -561,7 +561,7 @@ if (isset($_GET['category_id'])) {
 
     $sqlsrv->close();
 
-    header('Content-Type: application/json; charset=utf-8');
+    @@header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 }else if (isset($_GET['post_rpt_ruta'])){
     
@@ -589,7 +589,7 @@ if (isset($_GET['category_id'])) {
 
     $sqlsrv->close();
 
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 
 
@@ -605,7 +605,7 @@ if (isset($_GET['category_id'])) {
         }
     }
 
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 }else if(isset($_GET['get_comentarios_im'])){
 
@@ -630,7 +630,7 @@ if (isset($_GET['category_id'])) {
             $i++;
         }
     }
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($array));
 
 
@@ -707,7 +707,7 @@ if (isset($_GET['category_id'])) {
         $json[$i]['CALIFICATIVO']              = $fila["CALIFICATIVO"];
         $i++;
     }
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($json));
 }else if (isset($_GET['post_update_datos'])) {
 
@@ -836,7 +836,7 @@ if (isset($_GET['category_id'])) {
     }
 
 
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 }else if (isset($_GET['get_news'])) {
     $query = "SELECT banner_id,banner_image,banner_description,created_at FROM tbl_news where banner_status > 0 order by banner_id DESC";
@@ -851,7 +851,7 @@ if (isset($_GET['category_id'])) {
     }
 
 
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($set));
 }else if (isset($_GET['push_pin'])) {
 
@@ -926,12 +926,12 @@ if (isset($_GET['category_id'])) {
     $dta[$i]['Recup_Total']                 = number_format($Recup_Total,2,".","");
     $dta[$i]['Recup_cumple']                = ($Meta_Recuperacion==0) ? "100.00" : number_format(((floatval($Recup_Total)/floatval($Meta_Recuperacion))*100),2);
 
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo $val = str_replace('\\/', '/', json_encode($dta));
 
 
 }else{
-    header('Content-Type: application/json; charset=utf-8');
+    @header('Content-Type: application/json; charset=utf-8');
     echo "no method found!";
 }
 

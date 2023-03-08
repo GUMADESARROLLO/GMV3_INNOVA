@@ -1,9 +1,9 @@
 <?php
 
-    $host       = "mysql-svc";
+    $host       = "mysql_server";
     $user       = "root";
     $pass       = "a7m1425.";
-    $database   = "gmv3_innova"; 
+    $database   = "gmv3_inn"; 
 
     $connect = new mysqli($host, $user, $pass, $database);
     if (!$connect) {
