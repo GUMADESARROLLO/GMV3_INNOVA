@@ -38,7 +38,7 @@ if (isset($_GET['category_id'])) {
     $json = array();
 
     //INGRESO DE ARTICULOS EN PRE-VENTA
-    $query = $sqlsrv->fetchArray("SELECT * FROM GMV3_inn_iweb_articulos WHERE ARTICULO IN ('12905091','6IN00092','6IN00098','6IN00099','6IN00100','6IN00101','6IN00102') ORDER BY CALIFICATIVO,DESCRIPCION ASC", SQLSRV_FETCH_ASSOC);
+    $query = $sqlsrv->fetchArray("SELECT * FROM GMV3_inn_iweb_articulos WHERE ARTICULO IN ('12905091','6IN00092','6IN00098','6IN00099','6IN00100','6IN00101','6IN00102','6IN00105','6IN00106','6IN00107','6IN00108','6IN00109') ORDER BY CALIFICATIVO,DESCRIPCION ASC", SQLSRV_FETCH_ASSOC);
     foreach ($query as $fila) {
         $set_img ="SinImagen.png";
         $set_des = "";
