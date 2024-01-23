@@ -3,7 +3,7 @@
     $host       = "mysql_server";
     $user       = "root";
     $pass       = "a7m1425.";
-    $database   = "gmv3_inn"; 
+    $database   = "db_preventa_inn"; 
 
     $connect = new mysqli($host, $user, $pass, $database);
     if (!$connect) {
